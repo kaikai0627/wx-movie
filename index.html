@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一分钱领取电影票</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta id="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" name="viewport">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/index.css" /> 
+</head>
+<body>
+	<div class="main">
+		<img src="img/logo.png" class="logo">
+		<!-- <a href="javascript:;" class="receive">领取</a> -->
+		<div class="btns">
+			<a href="javascript:;" class="btn1"></a>
+			<a href="javascript:;" class="btn2"></a>
+		</div>
+		<div class="text">
+			<p>本活动支持指定银行卡参与，多次支付及非 指定银行卡支付无法获得奖励，且不退款</p>
+			<p>每个用户只能参与一次活动，已经领取过红 包的用户无法再次获领红包 副本</p>
+			<p>每个用户只能参与一次活动，已经领取过红 包的用户无法再次获领红包 副本</p>
+			<p>每个用户只能参与一次活动，已经领取过红 包的用户无法再次获领红包 副本</p>
+			<p>每个用户只能参与一次活动，已经领取过红 包的用户无法再次获领红包 副本</p>
+		</div>
+	</div>
+	<!-- 弹出层 -->
+	<div class="alert-box" style="display: none;">
+		<div class="model-content">
+			<div class="this-img">
+				<img src="img/touxiang.png">
+			</div>
+			<div class="this-content">
+				<p class="yh-name">亲爱的用户昵称</p>
+				<p class="yh-state">您已经领取过微票儿啦</p>
+				<a href="javascript:;" class="i-know">朕知道了</a>
+			</div>
+		</div>
+	</div>
+	 <script src="js/zepto.min.js"></script>
+	 <script>
+	 	$(function(){
+	 		$(document).on('tap',function(){
+                $('.alert-box').fadeOut();
+                $(document).off('touchmove',stopScroll);
+            });
+            
+            $('.i-know').on('tap',function(){
+                $('.alert-box').fadeOut();
+                $(document).off('touchmove',stopScroll);
+            });
+
+		    $('.receive').on('tap',function(e){
+		    	e.stopPropagation()
+                $('.alert-box').fadeIn();
+                $(document).on('touchmove',stopScroll);
+            });
+            
+            $('.model-content').on('tap',function(e){
+                e.stopPropagation()
+            });
+            function stopScroll(){
+		        return false;
+		    }
+	 	})
+	 </script>
+</body>
+</html>

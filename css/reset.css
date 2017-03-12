@@ -1,0 +1,50 @@
+/*css代码重置*/
+@charset "utf-8";
+body {
+	font: 100% "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	color:#fff;
+    margin:0;
+    padding:0;
+
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0;
+    padding:0;
+    border:none;
+    list-style:none;
+}
+input {border:none;}
+.lf   {float:left;}
+.rt   {float:right;}
+.clear{clear:both;}
+a       {color:#666;text-decoration:none;}
+a:hover {color:#429DF3;text-decoration:none;}
+img{
+	border:none;
+}
+.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background: #fff;
+}
+.b_mian,.c_main,.d_main,.e_main,.f_main{
+	margin-top: 41px;
+}
+
+/*顶部的加载条*/
+#web_loading{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index:99999999;
+	width:100%;
+}
+#web_loading div{
+	width:0;
+	height:5px;
+	background:#FF9F15;
+}

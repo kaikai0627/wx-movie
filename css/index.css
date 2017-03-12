@@ -1,0 +1,153 @@
+body{
+	width:100%;
+	margin:0 auto;
+	overflow:auto;
+	position: relative;
+	overflow-scrolling : touch;
+	-webkit-overflow-scrolling : touch;
+	tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+html {
+  font-size: 20px;
+  background: #EFF3D3 !important;
+}
+
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 21.33333333px !important;
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 22.08px !important;
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+img{
+	width: 100%;
+	max-width: 100%;
+}
+.main{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background: url('../img/main-bg.jpg') 0 0 no-repeat;
+    background-size: 100% 100%;
+
+}
+.logo{
+	width: 49%;
+    position: absolute;
+    top: .5rem;    
+    right: 1.4rem;
+}
+.receive{
+	width: 65%;
+	height:3rem; 
+	background: url('../img/btn-bg.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    margin-left: -32.5%;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #F3002D;
+}
+.text{
+	position: absolute;
+	top: 70%;
+	font-size: .6rem;
+	width: 68%;
+	left: 50%;
+    margin-left: -34%;
+	color:#f8d27d;
+	height: 8rem;
+    overflow: auto;
+}
+.text p{
+	padding-left: 1rem;
+	background: url('../img/round.png') .2rem .2rem no-repeat;
+	background-size:.4rem .4rem 
+}
+.alert-box{
+	position: fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background: rgba(0,0,0,.6);
+	z-index: 100;
+}
+.this-img{
+	border-radius: 50%;
+	border:2px solid #fff;
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+	top:8rem;
+	left: 50%;
+	margin-left: -2.5rem;
+	z-index: 150;
+}
+.this-content{
+	position: absolute;
+	top:8.6rem;
+	width: 80%;
+	border-radius: 8px;
+	margin-left: 10%;
+	background: #fff;
+	z-index: 120;
+	text-align: center;
+}
+.yh-name{
+	color: #323232;
+	margin-top: 3rem;
+	font-size:.65rem;
+}
+.yh-state{
+	color: #cc1134;
+	margin-top: .5rem;
+	font-size: .7rem;
+}
+.this-content a{
+	display: block;
+	width: 80%;
+	height: 2rem;
+	line-height: 2rem;
+	margin: 1rem auto;
+	background: #E50024;
+	border-radius: 8px;
+	font-size: .8rem;
+	color: #fff;
+}
+.btns{
+	padding: 0 15%;
+	position: absolute;
+    top: 58%;
+    width: 70%;
+}
+.btns a{
+	display: inline-block;
+	width: 45%;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	background: #FFE44D;
+	border-radius: 5px;
+}
+.btn1{
+	float: left;
+}
+.btn2{
+	float: right;
+}
